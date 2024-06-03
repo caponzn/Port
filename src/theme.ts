@@ -11,7 +11,18 @@ let theme = createTheme({
       },
     },
     typography: {
-        fontFamily: "sans-serif"
+        fontFamily: 
+        '"Helvetica Neue"',
+        // '-apple-system',
+        // 'BlinkMacSystemFont',
+        // '"Segoe UI"',
+        // 'Roboto',
+        // '"Helvetica Neue"',
+        // 'Arial',
+        // 'sans-serif',
+        // '"Apple Color Emoji"',
+        // '"Segoe UI Emoji"',
+        // '"Segoe UI Symbol"',
     }
 });
 theme = responsiveFontSizes(theme);
