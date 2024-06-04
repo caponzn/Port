@@ -46,13 +46,13 @@ const Hero = () => {
                         <Typography color = "primary.contrastText" variant = "h2" textAlign="center">I'm a junior Developer</Typography>
                         <Grid container display="flex" justifyContent="center" spacing={3} paddingTop={3}>
                             <Grid item xs={12} md={4} display="flex" justifyContent="center">
-                                <StyledButton>
+                                <StyledButton onClick={()=>console.log("Download")}>
                                     <DownloadIcon></DownloadIcon>
                                     <Typography>DOWNLOAD CV</Typography>
                                 </StyledButton>
                             </Grid>
                             <Grid item xs={12} md={4} display="flex" justifyContent="center">
-                                <StyledButton>
+                                <StyledButton onClick={()=>console.log("WhatsApp")}>
                                 <EmailIcon></EmailIcon>
                                     <Typography>CONTACT ME</Typography>
                                 </StyledButton>
