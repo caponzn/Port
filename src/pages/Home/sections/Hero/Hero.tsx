@@ -1,7 +1,9 @@
 import {  Box, Container, Grid, Typography, styled } from "@mui/material"
 import Avatar from "../../../../assets/images/avatar.png"
 import DownloadIcon from '@mui/icons-material/Download';
-import EmailIcon from '@mui/icons-material/Email';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import GitHubIcon from '@mui/icons-material/GitHub';
+import YouTubeIcon from '@mui/icons-material/YouTube';
 import StyledButton from "../../../../components/StyledButtons/StyledButton";
 import theme from "../../../../theme";
 import { AnimatedBackground } from "../../../../components/AnimatedBackground/AnimatedBackground";
@@ -46,19 +48,32 @@ const Hero = () => {
                         <Typography color = "primary.contrastText" variant = "h2" textAlign="center">I'm a junior Developer</Typography>
                         <Grid container display="flex" justifyContent="center" spacing={3} paddingTop={3}>
                             <Grid item xs={12} md={4} display="flex" justifyContent="center">
-                                <StyledButton onClick={()=>console.log("Download")}>
+                                <StyledButton onClick={()=>window.location.href = "https://drive.google.com/file/d/17qmmQt6Us_NfQTsfCmXHxrybI6bSqRy4/view?usp=sharing"}>
                                     <DownloadIcon></DownloadIcon>
                                     <Typography>DOWNLOAD CV</Typography>
                                 </StyledButton>
                             </Grid>
                             <Grid item xs={12} md={4} display="flex" justifyContent="center">
-                                <StyledButton onClick={()=>console.log("WhatsApp")}>
-                                <EmailIcon></EmailIcon>
+                                <StyledButton onClick={()=>window.location.href = "https://www.linkedin.com/in/ricardo-gomes-b368b6286/"}>
+                                <LinkedInIcon></LinkedInIcon>
                                     <Typography>CONTACT ME</Typography>
                                 </StyledButton>
                             </Grid>
                         </Grid>
-                        
+                        <Grid container display="flex" justifyContent="center" spacing={3} paddingTop={3}>
+                            <Grid item xs={12} md={4} display="flex" justifyContent="center">
+                                <StyledButton onClick={()=>window.location.href = "https://github.com/caponzn"}>
+                                    <GitHubIcon></GitHubIcon>
+                                    <Typography>PROJECTS</Typography>
+                                </StyledButton>
+                            </Grid>
+                            <Grid item xs={12} md={4} display="flex" justifyContent="center">
+                                <StyledButton onClick={()=>window.location.href = "https://www.youtube.com/channel/UCm2q_BlF31IqMWGifHGTJ9w"}>
+                                <YouTubeIcon></YouTubeIcon>
+                                    <Typography>YOUTUBE</Typography>
+                                </StyledButton>
+                            </Grid>
+                        </Grid>
                        
                     </Grid>
                 

@@ -10,8 +10,9 @@ const NavBar = () => {
         <AppBar position="absolute" >
             <StyledToolbar>
                 <MenuItem>About</MenuItem>
-                <MenuItem>Skills</MenuItem>
-                <MenuItem>Projects</MenuItem>
+                <MenuItem onClick={()=>window.location.href="https://github.com/caponzn"}>
+                  Projects
+                </MenuItem>
             </StyledToolbar>
             
         </AppBar>
